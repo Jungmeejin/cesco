@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>CESCO</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/include.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+     <link rel="shortcut icon" href="images/cesco_favicon_cTd_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!--service tab-->
+    <script type="text/javascript">
+    $(function () {
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active").css({
+                "color": "#333",
+                "font-weight":"nomal",
+                "background" :"url(images/main_images/step_off.png)"                    
+            });
+            $(this).addClass("active").css({
+                "color": "white",
+                "font-weight": "bolder",
+                "background" :"url(images/main_images/step_on.png)"
+            });
+            $(".tab_content").hide()
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn()
+        });
+    });
+        
+    </script>
+   <script type="text/javascript">
+        $(document).ready(function(){
+            //shopBanner
+            $('.shopBanner').slick({
+                dots:true,
+                infinite:true,
+                slidesToShow:1,
+                slidesToScroll:1,
+                autoplay:true,
+                autoplaySpeed:1000,
+                arrows:false,
+            });
+        })
+    </script>
+</head>
+    
+<body>
+<!--START-->
+<div id="wrap">
+
+<!--header-->
+<header id="header">
+    <div class="inner">
+    <!--logo-->
+    <h1><a href="index.html"><img src="images/main_images/logo.png"></a></h1>
+    <!--logo-->
+
+    <!--gnb-->
+    <ul class="gnb cf">
+        <li><a href="sub/sub_intro_index.html">CESCO</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">SUPPORTS</a></li>
+        <li><a href="#">My CESCO</a></li>
+    </ul>
+    <!--gnb-->
+</div>
+</header>
+<!--header-->
+
+<!--container-->
+<div id="container">
+    
+    <!--mainSlider-->
+    <div class="mainSlider">
+        <div class="sliderTxt">
+            <a href="#">
+                <img src="images/main_images/banner_txt.png"/>
+            </a>
+        </div>
+    </div>
+    <!--mainSlider-->
+    
+    <!--banner01 & hotIssue-->
+    <div class="hotIssue">
+        <h2>세스코의 HOT ISSUE를 확인하세요</h2>
+        <div class="hotCon">
+            <div class="inner cf">
+                <img src="images/main_images/hotIssue_img_Rn.png"/>
+                <div class="hotCon_txt">
+                <h2>세스코 라돈 안전 센터에서 7일동안 라돈 방사능을 측정해드립니다.</h2>
+                <p>세스코 Air 공기질연구소 라돈안전센터의 전문기술과 첨단 측정기로<br/>방사능에 오염된 침대뿐 아니라 토양, 암석, 건축자재등 어디에나<br/>존재하는 1군 발암물질 라돈 방사능을 측정해 드립니다.</p>
+                </div>
+                <div class="hotBtn">
+                    <a href="#"> 
+                        라돈 방사능 측정 신청하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner01 & hotIssue-->
+    
+    <!--banner02 & visit_need-->
+    <div class="visit_need">
+        <div class="inner cf">
+        <!--visit-->
+        <div class="icon_box cf">
+            <h3 class="box01Tit">처음 방문하셨나요?</h3>
+            <span class="L_blank"></span>
+            <span class="R_blank"></span>
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/visit_icon01_off.png" class="off"/>
+                    <img src="images/main_images/visit_icon01_on.png" class="on"/>
+                    <p>세스코 가상체험</p>
+                </a>
+            </div>
+            
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/visit_icon02_off.png" class="off"/>
+                    <img src="images/main_images/visit_icon02_on.png" class="on"/>
+                    <p>세스코 서비스</p>
+                </a>
+            </div>
+            
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/visit_icon03_off.png" class="off"/>
+                    <img src="images/main_images/visit_icon03_on.png" class="on"/>
+                    <p>우리집 위생체크</p>
+                </a>
+            </div>
+        </div>
+        <!--visit-->
+        
+        <!--need-->
+        <div class="icon_box">
+            <h3 class="box02Tit">세스코가 필요한 곳은 어디인가요?</h3>
+            <span class="L_blank"></span>
+            <span class="R_blank"></span>
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/need_icon01_off.png" class="off"/>
+                    <img src="images/main_images/need_icon01_on.png" class="on"/>
+                    <p>가정집</p>
+                </a>
+            </div>
+            
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/need_icon02_off.png" class="off"/>
+                    <img src="images/main_images/need_icon02_on.png" class="on"/>
+                    <p>요식업체</p>
+                </a>
+            </div>
+            
+            <div class="icon_box00">
+                <a href="#">
+                    <img src="images/main_images/need_icon03_off.png" class="off"/>
+                    <img src="images/main_images/need_icon03_on.png" class="on"/>
+                    <p>일반 사업체</p>
+                </a>
+            </div>
+        </div>
+        <!--need-->
+        </div>
+    </div>
+    <!--banner02 & visit_need-->
+    
+    <!--banner03 & consult-->
+    <div class="consult inner cf">
+        <div class="cons_box consult001">
+            <a href="#">무료 방문 상담 신청</a>
+        </div>
+        <div class="cons_box consult002">
+            <a href="#">
+            견적 상담 신청</a>
+        </div>
+        <div class="cons_box consult003">
+            <a href="#">
+            즉시 계약 신청</a>
+        </div>
+    </div>
+    <!--banner03 & consult-->
+    
+    <!--banner04 & services-->
+    <div class="service">
+        <div class="inner1100">
+            <h3>내게 맞는 세스코 서비스 찾기</h3>
+        </div>
+        <div class="inner1000">
+            <ul class="tabs cf">
+                <li class="active step1" rel="tab1">STEP 1</li>
+                <li class="step2" rel="tab2">STEP 2</li>
+                <li class="step3" rel="tab3">STEP 3</li>
+                <li class="step4" rel="tab4">RESULT</li>            
+            </ul>
+            
+            <div class="tab_container">
+
+                <!--tab1-->
+                <div id="tab1" class="tab_content tab_content01">
+                    <h4><span>피해장소</span>를 선택하세요</h4>
+                    <ul class="cf inner900">
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_1.png"/>
+                                <p>가정집</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_2.png"/>
+                                <p>요식업체</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_3.png"/>
+                                <p>판매 및 운송업</p>
+                            </a>
+                        </li>
+                        <li class="mar0">
+                            <a href="#">
+                                <img src="images/main_images/service_step1_4.png"/>
+                                <p>의료시설</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_5.png"/>
+                                <p>제조업</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_6.png"/>
+                                <p>학교 및 교육시설</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step1_7.png"/>
+                                <p>빌딩 및 공공기관</p>
+                            </a>
+                        </li>
+                        <li class="mar0">
+                            <a href="#">
+                                <img src="images/main_images/service_step1_8.png"/>
+                                <p>숙박업</p>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <!--tab1-->
+            <!--tab2 -->
+            <div id="tab2" class="tab_content tab_content01">
+                <h4><span>피해분야</span>를 선택하세요</h4>
+                    <ul class="cf inner900">
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_1.png"/>
+                                <p>개미</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_2.png"/>
+                                <p>바퀴벌레</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_3.png"/>
+                                <p>쥐</p>
+                            </a>
+                        </li>
+                        <li class="mar0">
+                            <a href="#">
+                                <img src="images/main_images/service_step2_4.png"/>
+                                <p>파리&#45;나방</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_5.png"/>
+                                <p>손 살균</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_6.png"/>
+                                <p>공간 살균</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/main_images/service_step2_7.png"/>
+                                <p>화장실 살균</p>
+                            </a>
+                        </li>
+                        <li class="mar0">
+                            <a href="#">
+                                <img src="images/main_images/service_step2_8.png"/>
+                                <p>식품위생관리</p>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <!--tab2-->
+            <!--tab3-->
+            <div id="tab3" class="tab_content tab_content02">
+                <h4>선택하신 피해장소와 피해분야에 따른<br/><span>내게 맞는 세스코 솔루션을 확인해보세요</span></h4>
+                <div class="step3Btn">
+                    <a href="#">내게 맞는 솔루션 확인</a>
+                </div>
+            </div>
+            <!--tab3-->
+            <!--tab4-->
+            <div id="tab4" class="tab_content tab_content02">
+                <h4>고객님께 추천하는<br/><span>세스코 맞춤 솔루션</span></h4>
+                <div class="content02_btn">
+                    <div class="step4Btn">
+                        <a href="#">방문상담신청</a>
+                    </div>
+                    <div class="step4Btn">
+                        <a href="#">견적상담신청</a>
+                    </div>
+                    <div class="step4Btn">
+                        <a href="#">서비스 자세히 보기</a>
+                    </div>
+                </div>
+            </div>    
+            <!--tab4-->
+        </div>
+        </div>
+    </div>
+    <!--banner04 & services-->
+    
+    <!--banner05 & shop-->
+    <div class="shop">
+        <div class="inner1100">
+            <h3>SHOP</h3>
+            
+            <!--shopBanner-->
+            <div class="shopBanner">
+                <div class="shopBanner_img">
+                <a href="#">
+                    <img src="images/main_images/shopBanner_slide01.png"/>
+                </a>
+                </div>
+                <div class="shopBanner_img">
+                <a href="#">
+                    <img src="images/main_images/shopBanner_slide02.png"/>
+                </a>
+                </div>
+            </div>
+            <!--shopBanner-->
+            
+            <div class="product inner1000 cf">
+                <div class="prod_box">
+                    <a href="#"><img src="images/main_images/shop_product01.png"/>
+                    <p>세스케어<br/>곰팡이제거 파워젤</p>
+                    </a>
+                </div>
+                
+                <div class="prod_box">
+                    <a href="#"><img src="images/main_images/shop_product02.png"/>
+                    <p>세스케어<br/>기름때 세정제 파워</p>
+                    </a>
+                </div>
+                
+                <div class="prod_box mar0">
+                    <a href="#"><img src="images/main_images/shop_product03.png"/>
+                    <p>세스케어<br/>주방세제 프리미엄 파우치</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner05 & shop-->
+    
+    <!--banner06 & etc-->
+    <div class="etc inner cf">
+        <!--이물분석센터-->
+        <div class="analysis_center etc_box01">
+            <a href="#">
+                <h4>세스코 이물 분석 센터</h4>
+                <img src="images/main_images/kolasMark_img.png"/>
+                <p><span>국내 유일</span><br/>'이물' 전문 분석 서비스</p>
+                <h5>국제공인시험기관 인정</h5>
+            </a>
+        </div>
+        <!--이물분석센터-->
+        
+        <!--소독증명서-->
+        <div class="disnifection etc_box01">
+            <a href="#">
+                <h4>소독 증명서</h4>
+                <img src="images/main_images/document_img.png"/>
+                <p>소독 증명서 출력</p>
+                <span>일반 가정집에서는 해당되지 않음</span>
+            </a>
+        </div>
+        <!--소독증명서-->
+        
+        <!--review-->
+        <div class="review etc_box02">
+            <a href="#">
+                <h4>REVIEW</h4>
+                <p>전국 방방곡곡 세스코를 경험한 고객들이<br/>들려주는 리얼하고 생생한 이야기</p>
+            </a>
+        </div>
+        <!--review-->
+        
+        <!--qna-->
+        <div class="qna etc_box02">
+            <a href="#">
+                <h4>QnA</h4>
+                <p>해충,바이러스,진드기 등 생활위생 및<br/>세스코 서비스에 관한 Q&amp;A</p>
+            </a>
+        </div>
+        <!--qna-->
+        
+    </div>
+    <!--banner06 & etc-->
+    
+</div>
+<!--container-->
+
+<!--footer-->
+<footer id="footer">
+    <!--footerMenu-->
+    <ul class="footerMenu">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">서비스이용약관</a></li>
+        <li><a href="#">고객지원</a></li>
+        <li class="last"><a href="#">찾아오시는 길</a></li>
+    </ul>
+    <!--footerMenu-->
+
+    <!--footerInfo-->
+    <div class="footerInfo">
+        <p><span>(주)세스코</span><br/>대표이사 : 전찬혁<br/>주소 : 서울시 강동구 상일로 10길 46번지 세스코 터치센터<br/>사업자등록번호 : 212 - 81 - 05946<br/>통신판매업신고번호 : 제2008 - 서울강동 - 0240호<br/>FAX : (02)488 - 1720</p>
+        <h5>&copy; CESCO.ALL RIGHTS RESERVED.</h5>
+    </div>
+    <!--footerInfo-->
+</footer>
+<!--footer-->
+
+</div>
+<!--END-->
+</body>
+</html>

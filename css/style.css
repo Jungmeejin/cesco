@@ -1,0 +1,495 @@
+@charset:"utf-8";
+
+/*mainSlider*/
+.mainSlider{
+    background:url(../images/main_images/mainBanner_slide01.png) no-repeat;
+    width:100%;
+    height: auto;
+    background-size:cover;
+    background-position:center center;
+}
+.sliderTxt{
+    width:500px;
+    padding:50px 0;
+    padding-left:100px;
+}
+.sliderTxt a{
+    display:block;
+}
+.sliderTxt a img{
+    display:block;
+    width:100%;
+}
+/*mainSlider*/
+
+/*banner01 & hotIssue*/
+.hotIssue{
+    background:#28769d;
+}
+.hotIssue h2{
+    color:#fff;
+    font-weight: bold;
+    font-size:20px;
+    padding:20px 0;
+    text-align: center;
+}
+
+.hotCon{
+    background:#d7d7d7;
+    position:relative;
+}
+.hotCon img{
+    width:500px;
+    height: auto;
+    display: block;
+    float:left;
+    padding:40px;
+}
+.hotCon_txt{
+    float:left;
+    padding-top:30px;
+}
+.hotCon_txt h2{
+    color:#323232;
+}
+.hotCon_txt p{
+    color:#6d6d6d;
+    line-height: 32px;
+}
+
+.hotBtn{    
+    background:url(../images/main_images/hotIssue_arrow_off.png) no-repeat;
+    width:230px;
+    height:38px;
+    background-size:cover;
+    position:absolute;
+    bottom:70px;
+    right:400px;
+}
+.hotBtn a{
+    display:block;
+    margin-left:5px;
+    height: 100%;
+    line-height: 38px;
+    color:#0e0e0e;
+    font-weight: bold;
+}
+.hotBtn:hover{
+    background:url(../images/main_images/hotIssue_arrow_on.png) no-repeat;
+    width:230px;
+    height:38px;
+    background-size:cover;
+}
+.hotBtn:hover a{
+    color:#fff;
+}
+
+/*banner01 & hotIssue*/
+
+/*banner02 & visit_need*/
+.visit_need{
+    margin:60px auto;
+}
+
+.icon_box{
+    float:left;
+    border:2px solid #222;
+    margin:0 31px;
+    position:relative;
+}
+.icon_box h3{
+    position:absolute;
+    top:-14px;
+    right:50%;
+    background:#fff;
+    padding:0 3px;
+}
+.box01Tit{
+    margin-right:-86px;
+}
+.box02Tit{
+    width:292px;
+    margin-right:-146px;
+}
+.icon_box span{
+    width:20px;
+    height: 100px;
+    background:#fff;
+    position:absolute;
+    bottom:50%;
+    margin-bottom: -50px;
+}
+.L_blank{
+    left:-11px;
+}
+.R_blank{
+    right:-11px;
+}
+.icon_box00{
+    float:left;
+    padding:30px;
+    padding-top:40px;
+}
+.icon_box00 a{
+    text-align: center;
+    display: block;
+    color:#0e0e0e;
+}
+.icon_box00 a .off{
+    display: block;
+}
+.icon_box00 a .on{
+    display:none;
+}
+.icon_box00 a p{
+    margin-top:30px;
+}
+
+.icon_box00 a:hover .on{
+    display:block;
+}
+.icon_box00 a:hover .off{
+    display:none;
+}
+.icon_box00 a:hover p{
+    font-weight: bold;
+}
+/*banner02 & visit_need*/
+
+/*banner03 & consult*/
+.consult{
+    margin-bottom: 60px;
+}
+.cons_box{
+    float:left;
+    margin-right:30px;
+    width:380px;
+    height: 280px;
+}
+.cons_box a{
+    display: block;
+    color:#fff;
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+    line-height: 280px;
+    height: 100%;
+    transition:background 0.5s;
+}
+.consult001{
+    background:url(../images/main_images/consult_bg01.png) no-repeat;
+}
+.consult002{
+    background:url(../images/main_images/consult_bg02.png) no-repeat;
+}
+.consult003{
+    background:url(../images/main_images/consult_bg03.png) no-repeat;
+    margin-right:0;
+}
+.cons_box a:hover{
+    background:rgba(12,51,105,0.7);
+}
+
+/*banner03 & consult*/
+
+/*banner04 & services*/
+.service{
+    background:#a9d1e6;
+}
+.service h3{
+    padding:30px 0;
+    font-size:17px;
+}
+
+.tabs{}
+.tabs li{
+    float:left;
+    width:220px;
+    height: 70px;
+    margin-right:45px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+.tabs .step1{
+     background:url(../images/main_images/step_on.png) no-repeat;
+    background-size:cover;
+    color:#fff;
+    font-weight: bold;
+}
+.tabs .step2{
+     background:url(../images/main_images/step_off.png) no-repeat;
+    background-size:cover;
+}
+.tabs .step3{
+     background:url(../images/main_images/step_off.png) no-repeat;
+    background-size:cover;
+}
+.tabs .step4{
+    width:205px;
+    background:#a9a9a9;
+    margin-right:0;
+}
+
+.tab_container{}
+.tab_container h4{
+    padding-top:30px;
+    font-size:15px;
+    text-align: left;
+}
+.tab_container h4 span{
+    border-top:1px solid #222;
+}
+.tab_container ul{
+    margin:30px auto;
+    
+}
+.tab_container ul li{
+    float:left;
+    margin-right:125px;
+    margin-bottom: 30px;
+}
+.tab_container ul li.mar0{
+    margin-right:0;
+}
+.tab_container ul li a{
+    color:#222;
+}
+.tab_container ul li a img{
+    display:block;
+    padding-bottom:20px;
+    border-bottom: 1px solid #222;
+}
+.tab_container ul li a p{
+    text-align: center;
+    margin-top:5px;
+}
+.tab_container ul li a:hover p{
+    font-weight: bold;
+}
+
+.tab_container .tab_content02{
+    height: 406px;
+}
+.tab_container .tab_content02 h4{
+    color:#676767;
+    text-align: center;
+    line-height: 30px;
+    padding-top:125px;
+}
+.tab_container .tab_content02 h4 span{
+    border-bottom: 1px solid #676767;
+    border-top:0;
+    padding-bottom:5px;
+}
+.step3Btn{
+    text-align:center;
+    font-size:14px;
+    width:300px;
+    height: 60px;
+    line-height: 60px;
+    background:#53a4cd;
+    margin:80px auto 120px auto;
+}
+.content02_btn{
+    margin:0 180px;
+    font-size:0;
+}
+.step4Btn{
+    text-align:center;
+    width:200px;
+    height: 60px;
+    font-size:14px;
+    line-height: 60px;
+    background:#53a4cd;
+    display:inline-block;
+    margin-right:20px;
+    margin:80px 20px 120px 0;
+}
+.step4Btn:last-child{
+    margin-right:0;
+}
+.step3Btn a, .step4Btn a{
+    color:#fff;
+    display: block;
+}
+/*banner04 & services*/
+
+/*banner05 & shop*/
+.shop{
+    background:#51677a;
+}
+.shop h3{
+    padding:30px 0;
+    font-size:17px;
+}
+.shopBanner{
+    position:relative;
+}
+.shopBanner a{
+    display:block;
+}
+.shopBanner a img{
+    display: block;
+}
+/*shopBanner_slick*/
+.slick-dots{
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+}
+.slick-dots li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.slick-dots li.slick-active{
+    background: #f15d24;
+}
+.slick-dots button{
+    border: 0;
+    font-size: 0;
+    padding: 0;
+}
+.slick-slide img{
+    width: 100%;
+    margin: 0 auto;
+}
+/*shopBanner_slick*/
+
+.product{
+    padding:40px 0 50px 0;
+}
+.prod_box{
+    float:left;
+    margin-right:20px;
+    position:relative;
+}
+.prod_box.mar0{
+    margin-right:0;
+}
+.prod_box a{
+    color:#222;
+    display: block;
+}
+.prod_box a img{
+    display:block;
+}
+.prod_box a p{
+    writing-mode:tb-rl;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+/*banner05 & shop*/
+
+/*banner06 & etc*/
+.etc{
+    margin:50px auto;
+}
+
+.etc_box01{
+    background:#ebebeb;
+    width:240px;
+    height:297px;
+    margin-right:40px;
+    float:left;
+    text-align:center;
+}
+.etc_box01 a{
+    display:block;
+    color:#222;
+    height: 100%;
+}
+.etc_box01 a h4{
+    font-size:18px;
+    padding:20px 0 10px 0;
+    font-weight: bold;
+}
+.etc_box01 a img{
+    display:block;
+    margin:10px auto;
+}
+/*analysis_center*/
+.analysis_center a p{
+    font-size:16px;
+    padding:10px 0;
+    line-height: 25px;
+}
+.analysis_center a p span{
+    color:#1d85c7;
+}
+.analysis_center a h5{
+    color:#224290;
+    font-size:15px;
+}
+/*analysis_center*/
+
+/*disnifection*/
+.disnifection a p{
+    font-size:16px;
+    padding-top:10px;
+}
+.disnifection a span{
+    font-size:12px;
+    color:#9f9f9f;
+}
+/*disnifection*/
+
+/*review, qna*/
+.etc_box02{
+    float:left;
+    width:300px;
+    margin-right:40px;
+    height:297px;
+}
+.review{
+    background:url(../images/main_images/review_bg.png) no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+.qna{
+    background:url(../images/main_images/qna_bg.png) no-repeat;
+    background-position: center center;
+    margin-right:0;
+    background-size:cover;
+}
+
+.etc_box02 a{
+    display:block;
+    height: 100%;
+    color:#222;
+}
+.qna a{
+    color:#fff;
+}
+.etc_box02 a h4{
+    text-align: center;
+    padding-top:175px;
+    font-size:18px;
+}
+.etc_box02 a p{
+    color:#777;
+    text-align: center;
+    padding-top:30px;
+    line-height: 20px;
+    font-size:12px;
+}
+/*review, qna*/
+/*banner06 & etc*/
+
+
+
+
+
+
+
+
+
+
+
